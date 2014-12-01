@@ -11,7 +11,7 @@
         HOME_UNIX   = process.env.HOME,
         HOME        = (HOME_UNIX || HOME_WIN) + '/',
         
-        name        = HOME + '.hippo.json',
+        name        = HOME + '.hippa.json',
         
         config      = tryRequire(name) || {},
         

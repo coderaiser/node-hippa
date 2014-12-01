@@ -1,36 +1,36 @@
-# Hippo
+# Hippa
 
 Read file or directory contents from github repo with help of node.
 
 ## Install
 
 ```
-npm i hippo -g
+npm i hippa -g
 ```
 ## How to use?
 
 ### Global
 
 ```
-$ hippo
-Usage: hippo [owner/repo/path]
+$ hippa
+Usage: hippa [owner/repo/path]
 
-$ hippo coderaiser/node-hippo/README.md
+$ hippa coderaiser/node-hippa/README.md
 ```
 
 ### Local
 
 ```
-npm i hippo --save
+npm i hippa --save
 ```
 
 ## Example
 
 ```js
-var hippo   = require('hippo'),
-    path    = 'coderaiser/node-hippo/package.json';
+var hippa   = require('hippa'),
+    path    = 'coderaiser/node-hippa/package.json';
 
-hippo(path, function(error, data) {
+hippa(path, function(error, data) {
     if (error)
         console.error(error.message);
     else

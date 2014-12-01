@@ -1,17 +1,17 @@
 {
-  "name": "hippo",
+  "name": "hippa",
   "version": "1.0.0",
   "description": "create release on github",
-  "main": "lib/hippo.js",
+  "main": "lib/hippa.js",
   "bin": {
-    "hippo": "bin/hippo.js"
+    "hippa": "bin/hippa.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/coderaiser/node-hippo.git"
+    "url": "http://github.com/coderaiser/node-hippa.git"
   },
   "keywords": [
     "github",
@@ -20,7 +20,7 @@
   "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coderaiser/node-hippo/issues"
+    "url": "https://github.com/coderaiser/node-hippa/issues"
   },
   "dependencies": {
     "github": "~0.2.3",
