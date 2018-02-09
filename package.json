@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "github": "~0.2.3",
-    "tryrequire": "~1.1.3"
+    "tryrequire": "^2.0.1"
   }
 }
