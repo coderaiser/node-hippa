@@ -7,7 +7,7 @@
     "hippa": "bin/hippa.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint lib"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,9 @@
   "dependencies": {
     "@octokit/rest": "^14.0.8",
     "tryrequire": "^2.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-plugin-node": "^6.0.0"
   }
 }
