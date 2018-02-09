@@ -27,17 +27,18 @@ npm i hippa --save
 ## Example
 
 ```js
-var hippa   = require('hippa'),
-    path    = 'coderaiser/node-hippa/package.json';
+const hippa = require('hippa');
+const path = 'coderaiser/node-hippa/package.json';
 
-hippa(path, function(error, data) {
+hippa(path, (error, data) => {
     if (error)
-        console.error(error.message);
-    else
-        console.log(data);
+        return console.error(error.message);
+    
+    console.log(data);
 });
 ```
 
 ## License
 
 MIT
+

@@ -2,19 +2,19 @@
 
 'use strict';
 
-var hippo       = require('..');
-var tryRequire = require('tryrequire');
+const hippo       = require('..');
+const tryRequire = require('tryrequire');
 
-var HOME_WIN = process.env.HOMEPATH;
-var HOME_UNIX = process.env.HOME;
-var HOME = (HOME_UNIX || HOME_WIN) + '/';
+const HOME_WIN = process.env.HOMEPATH;
+const HOME_UNIX = process.env.HOME;
+const HOME = (HOME_UNIX || HOME_WIN) + '/';
 
-var name = HOME + '.hippa.json';
+const name = HOME + '.hippa.json';
 
-var config = tryRequire(name) || {};
+const config = tryRequire(name) || {};
 
-var argv = process.argv.slice(2);
-var arg = argv[0];
+const argv = process.argv.slice(2);
+const arg = argv[0];
 
 if (/-v|--version/.test(arg))
     version();
@@ -27,15 +27,16 @@ function main() {
     if (config.token)
         hippo(config.token);
     
-    hippo.read(arg, function(error, data) {
+    hippo.read(arg, (error, data) => {
         if (error)
-            console.error(error.message);
-        else if (!Array.isArray(data))
-            console.log(data);
-        else
-            data.forEach(function(file) {
-                console.log(file.name);
-            });
+            return console.error(error.message);
+        
+        if (!Array.isArray(data))
+            return console.log(data);
+        
+        data.forEach((file) => {
+            console.log(file.name);
+        });
     });
 }
 
@@ -48,8 +49,7 @@ function info() {
 }
 
 function help() {
-    var usage       = 'Usage: ' + info().name + ' <owner/repo/path>';
-        
+    const usage = 'Usage: ' + info().name + ' <owner/repo/path>';
     console.log(usage);
 }
 

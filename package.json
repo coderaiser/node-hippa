@@ -1,7 +1,7 @@
 {
   "name": "hippa",
   "version": "1.0.1",
-  "description": "create release on github",
+  "description": "read file or directory contents from github repo with help of node",
   "main": "lib/hippa.js",
   "bin": {
     "hippa": "bin/hippa.js"
@@ -21,6 +21,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/coderaiser/node-hippa/issues"
+  },
+  "engines": {
+    "node": ">=4"
   },
   "dependencies": {
     "github": "~0.2.3",
