@@ -2,7 +2,7 @@
 
 'use strict';
 
-const hippo       = require('..');
+const hippo = require('..');
 const tryRequire = require('tryrequire');
 
 const HOME_WIN = process.env.HOMEPATH;
