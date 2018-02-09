@@ -1,6 +1,6 @@
 {
   "name": "hippa",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "read file or directory contents from github repo with help of node",
   "main": "lib/hippa.js",
   "bin": {
